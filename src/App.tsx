@@ -5,7 +5,7 @@ const App = () => {
     <Grid
       templateAreas={{ base: `"nav" "main"`, lg: `"nav nav" "aside main"` }}
     >
-      <GridItem area="nav" bg="coral">
+      <GridItem area="nav">
         <Navbar />
       </GridItem>
       <Show above="lg">
@@ -13,9 +13,7 @@ const App = () => {
           aside
         </GridItem>
       </Show>
-      <GridItem area="main" bg="dodgerblue">
-        main
-      </GridItem>
+      <GridItem area="main">main</GridItem>
     </Grid>
   );
 };
